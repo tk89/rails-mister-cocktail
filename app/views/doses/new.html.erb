@@ -1,8 +1,2 @@
-<div class="container pt-4 bg-white">
-  <h1>Add a Dose <%= @cocktail.name %></h1>
-  <%= simple_form_for [@cocktail, @dose] do |f| %>
-    <%= f.association :ingredient %>
-    <%= f.input :description, label: 'Add your dose' %>
-    <%= f.button :submit, class: "btn btn-outline-primary" %>
-  <% end %>
-</div>
+<h1><%= @cocktail.name %></h1>
+<%= render 'form' %>

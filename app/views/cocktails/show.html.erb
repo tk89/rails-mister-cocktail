@@ -1,5 +1,11 @@
-<h1>show Restaurant</h1>
-<h1><%= @cocktail.name %></h1>
+<div class="container">
+  <h1><%= @cocktail.name %></h1>
+    <p><% @cocktail.doses.each do |dose| %></p>
+      <p><%= dose.description %></p>
+      <p><%= dose.ingredient.name %></p>
+  <% end %>
+</div>
 
-<p> @cocktails.each do |cocktails| </p>
-  <p><%= cocktails.name %></p>
+<%= link_to "Back to all cocktails", cocktails_path %>
+<%= link_to "Add new dose", new_cocktail_dose_path(@cocktail) %>
+
