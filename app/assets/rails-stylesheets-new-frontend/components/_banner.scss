@@ -1,0 +1,35 @@
+.banner {
+  height: 100vh !important;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-image:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://images.pexels.com/photos/1189261/pexels-photo-1189261.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*Flexbox stuff */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*Text styles */
+  color: white;
+  text-align: center;
+}
+.banner h1 {
+  font-size: 120px;
+  font-weight: light;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  font-family: 'Molle', cursive;
+}
+
+.banner h2 {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.banner p {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
